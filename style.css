@@ -80,4 +80,7 @@ body .container .title .title::before {
   height: 5px;
   width: 30px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+body .container p {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

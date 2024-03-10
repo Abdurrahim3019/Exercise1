@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body div, body p, body h1, body h2, body h3, body h4, body h5, body h6, body ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body ul {
+  list-style-type: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +35,18 @@ body .container {
 }
 body .container .title {
   font-size: 25px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight: 700;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 10px;
+}
+body .container .title::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  bottom: 3px;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 body .container form {
   text-align: center;

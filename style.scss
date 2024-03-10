@@ -1,12 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins',sans-serif;
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
+
+code{
+    @include text;
+    letter-spacing: 20px;
 }
+
+quote{
+    @extend code;
+}
+
 header{
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: linear-gradient(135deg, $firstColor, $secondColor );
     h1{   
         font-size: 30px;
         display: flex;   

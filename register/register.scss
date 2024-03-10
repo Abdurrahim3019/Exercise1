@@ -1,3 +1,7 @@
+@import '../_reset.scss';
+@import '../_variables.scss';
+@import '../mixins.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-left: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, $firstColor, $secondColor);
   .container {
     max-width: 700px;
     width: 100%;
@@ -72,7 +76,7 @@ body {
          padding:10px;
          
          input[type='submit'] {
-            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            background: linear-gradient(135deg, $firstColor, $secondColor);
             width: 100%;
             padding: 9px 0;
             border-radius: 5px;
@@ -86,19 +90,7 @@ body {
       }
     }
     .title {
-      font-size: 25px;
-      font-weight: 500;
-      position: relative;
-      padding: 5px 10px;
-      &::before {
-        content: '';
-        position: absolute;
-        left: 11px;
-        bottom: 3px;
-        height: 4px;
-        width: 30px;
-        background: linear-gradient(135deg, #71b7e6, #9b59b6);
-      }
+      @include formheader;
     }
     p {
       text-align: center;

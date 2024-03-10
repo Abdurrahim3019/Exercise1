@@ -1,0 +1,21 @@
+@mixin text{
+    font-size:20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+@mixin formheader{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        padding: 5px 10px;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 11px;
+          bottom: 3px;
+          height: 4px;
+          width: 30px;
+          background: linear-gradient(135deg, $firstColor, $secondColor);
+        }
+}

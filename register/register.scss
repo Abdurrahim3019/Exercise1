@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 12px #4f278f;
+    form {
+      .user-details {
+        .boxes {
+          display: flex;
+          .column {
+            width: 50%;
+            padding: 10px 20px;
+            &.left-column {
+              padding: 10px 20px 10px 10px;
+            }
+            &.right-column {
+              padding: 10px 10px 10px 20px;
+            }
+          }
+          .input-box {
+            padding: 15px 0;
+            .details {
+              font-weight: 500;
+              font-size: 14px;
+              margin-bottom: 5px;
+              display: block;
+            }
+            input {
+              padding: 8px 15px;
+              width: 100%;
+              outline: none;
+              border-radius: 6px;
+              border: 1px solid #ccc;
+              font-size: 15px;
+              box-shadow: 0 1.5px lightgrey;
+            }
+          }
+        }
+      }
+      .gender-details {
+         padding: 0 10px;
+        .gender-title {
+         font-size: 18px;
+         font-weight: 500;
+        }
+        .category {
+          display: flex;
+          margin: 15px 0;
+          justify-content: start;
+          label {
+            font-size: 15px;
+            width: 162px;
+          }
+        }
+      }
+      .button{
+         padding:10px;
+         
+         input[type='submit'] {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            width: 100%;
+            padding: 9px 0;
+            border-radius: 5px;
+            text-align: center;
+            border: none;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+      }
+    }
+    .title {
+      font-size: 25px;
+      font-weight: 500;
+      position: relative;
+      padding: 5px 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 11px;
+        bottom: 3px;
+        height: 4px;
+        width: 30px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 15px;
+      color: #7b7979;
+      font-weight: 300;
+      a{
+         font-weight: 600;
+      }
+    }
+  }
+}
